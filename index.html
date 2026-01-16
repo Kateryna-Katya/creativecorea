@@ -2,55 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/creativecorea/favicon.svg" />
+    <link rel="icon" type="image/png" href="/creativecorea/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet">
+    <title>Creativecorea</title>
     <script type="module" crossorigin src="/creativecorea/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/creativecorea/assets/styles-X9THPhCB.css">
+    <link rel="stylesheet" crossorigin href="/creativecorea/assets/styles-DyMmhENJ.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero-section" id="hero">
+    <div class="container">
+        <h1 class="hero-title">Os Nossos <span class="hero-span">Casinos Favoritos</span></h1>
+        <ul class="hero-list">
+            <li class="hero-item">
+                <img class="hero-img-one" src="/creativecorea/assets/one-CjNQ2xnQ.png" alt="Site logo" loading="lazy">
+                <img class="flag-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOmSURBVHgBrVVdbBRVFP7unZlOO92lY9oIGJQhAaJoaPtoaOOSmKho0uozD5D43qIxJBDS3djG8gRNTPwPfeKxKTFqwoNsQKMJD4sosdiHjmjbRVuc7k5n/2bu9czALkspu+Xne5p7Jvd83/nOufcyNIA5kjBd3x8evJ5/5b2fliwDsDSKa4w5TMornLFprqrndti2/aAcbL1g60jCqgT+GfpMQOEYvFHC+Pm/0SDJpKJpqfWI+NqAdmLfcEX4mTC5NHTIzk0UVNAIEjjkVyqZma1bhxsSqMf7kkKyU7TDlLE2IE6mMIYNwlQ4PzW7bVuyPsjqlUfJQ0WkPEx+sIujP85xQAvQOpND8bKD8rUc/H9KDZkCIY48v7h4ulZB6LkAG4n+kudmRxu+fY7j9aUKpi8XYNsBViZugPsKnhraDfVpvSEBVTIyZ1lWrQLlRP8ZSHkoUr+pHZ/tMaCfz+G13zl4LFbbKFwX6PTQ8moblk/OQnp+I570rvn5/TxUX00eqt9uUmOlxK8FifjQELqmpvDFy+/A/+RLmOPjKF0LrfoPxv4uNEEiY5omL0t/oBqRuoa3TIZLeeqyyuC6BWR+mb3zUyKbXYbSrkR9aNlhNCNAzDCGVCYwWIvoLehQGDWWYXOMIXvzFj6+MAU3X8BH2bMYsOJ4yWqH3h0HM5SmBDSBCU5d6KkFaN5D9ZfyAmc9CUt4+OrTo+jp3omx1Lvo27c3smj1m5s0SeWm+clqi4czX8eIq56g8VSw0G2geOE7lC5exJYtnfBn/0BudBTqTh3tb24mkmxTAsaYpa4NrgTA2HyAz/doOHzLR/LDYzjgBigKgdLKCjo+eDaqIvi3hI2A8eP9c4xJKyqpqyOapBDhATv2DKdpAvoUie1f/wX9xTiKv+U3pP4OHJWS2/RhRctA1AjCPrxxXWCvwVDMujgYev/9UrPZX4srnC6qdG1Zvn/zVWp25s8iKnPewyaHFGKaC0WdqAZYoYgniUDKcxyptINqFUKuW8WjgEZ08oVs1o4MDyrqYToPIRFYbjU6tY8Jh27UVPhxu6Mn07YUMgqEjWZ0RTwOyPtkqP4uAUGM/XiadCejhVcikkfsh5TJ3YuLtb7e86KJ0R9S5N2RyK7VAljeexi7HFI+vGthIVUfvO9NDisJymqvlGwyqmQ5BxQraIK0HwS99cqraPzgHk1YXPMH3p7JD77/83JPK727OlWkSWnTPWNTdWnX8yZ6Hcd5UIr/Afycn+OvIJeiAAAAAElFTkSuQmCC" alt="Flag" loading="lazy">
+                <p class="cost-text">100% até 100€</p>
+                <p class="spins-text">+ 25 Free Spins (registo)</p>
+                <p class="logo-text">Solverde</p>
+                <a class="hero-link" target="_blank" href="https://www.solverde.pt/">Jogue agora</a>
+            </li>
+            <li class="hero-item">
+                <img class="hero-img-one" src="/creativecorea/assets/two-CN7xRLBk.png" alt="Site logo" loading="lazy">
+                <img class="flag-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOmSURBVHgBrVVdbBRVFP7unZlOO92lY9oIGJQhAaJoaPtoaOOSmKho0uozD5D43qIxJBDS3djG8gRNTPwPfeKxKTFqwoNsQKMJD4sosdiHjmjbRVuc7k5n/2bu9czALkspu+Xne5p7Jvd83/nOufcyNIA5kjBd3x8evJ5/5b2fliwDsDSKa4w5TMornLFprqrndti2/aAcbL1g60jCqgT+GfpMQOEYvFHC+Pm/0SDJpKJpqfWI+NqAdmLfcEX4mTC5NHTIzk0UVNAIEjjkVyqZma1bhxsSqMf7kkKyU7TDlLE2IE6mMIYNwlQ4PzW7bVuyPsjqlUfJQ0WkPEx+sIujP85xQAvQOpND8bKD8rUc/H9KDZkCIY48v7h4ulZB6LkAG4n+kudmRxu+fY7j9aUKpi8XYNsBViZugPsKnhraDfVpvSEBVTIyZ1lWrQLlRP8ZSHkoUr+pHZ/tMaCfz+G13zl4LFbbKFwX6PTQ8moblk/OQnp+I570rvn5/TxUX00eqt9uUmOlxK8FifjQELqmpvDFy+/A/+RLmOPjKF0LrfoPxv4uNEEiY5omL0t/oBqRuoa3TIZLeeqyyuC6BWR+mb3zUyKbXYbSrkR9aNlhNCNAzDCGVCYwWIvoLehQGDWWYXOMIXvzFj6+MAU3X8BH2bMYsOJ4yWqH3h0HM5SmBDSBCU5d6KkFaN5D9ZfyAmc9CUt4+OrTo+jp3omx1Lvo27c3smj1m5s0SeWm+clqi4czX8eIq56g8VSw0G2geOE7lC5exJYtnfBn/0BudBTqTh3tb24mkmxTAsaYpa4NrgTA2HyAz/doOHzLR/LDYzjgBigKgdLKCjo+eDaqIvi3hI2A8eP9c4xJKyqpqyOapBDhATv2DKdpAvoUie1f/wX9xTiKv+U3pP4OHJWS2/RhRctA1AjCPrxxXWCvwVDMujgYev/9UrPZX4srnC6qdG1Zvn/zVWp25s8iKnPewyaHFGKaC0WdqAZYoYgniUDKcxyptINqFUKuW8WjgEZ08oVs1o4MDyrqYToPIRFYbjU6tY8Jh27UVPhxu6Mn07YUMgqEjWZ0RTwOyPtkqP4uAUGM/XiadCejhVcikkfsh5TJ3YuLtb7e86KJ0R9S5N2RyK7VAljeexi7HFI+vGthIVUfvO9NDisJymqvlGwyqmQ5BxQraIK0HwS99cqraPzgHk1YXPMH3p7JD77/83JPK727OlWkSWnTPWNTdWnX8yZ6Hcd5UIr/Afycn+OvIJeiAAAAAElFTkSuQmCC" alt="Flag" loading="lazy">
+                <p class="cost-text">Até 700€</p>
+                <p class="spins-text">+ 300 Jogadas Grátis</p>
+                <p class="logo-text">Nossaaposta</p>
+                <a class="hero-link" target="_blank" href="https://www.nossaaposta.pt/">Jogue agora</a>
+            </li>
+            <li class="hero-item">
+                <img class="hero-img-one" src="/creativecorea/assets/three-DwVEhMWF.png" alt="Site logo" loading="lazy">
+                <img class="flag-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOmSURBVHgBrVVdbBRVFP7unZlOO92lY9oIGJQhAaJoaPtoaOOSmKho0uozD5D43qIxJBDS3djG8gRNTPwPfeKxKTFqwoNsQKMJD4sosdiHjmjbRVuc7k5n/2bu9czALkspu+Xne5p7Jvd83/nOufcyNIA5kjBd3x8evJ5/5b2fliwDsDSKa4w5TMornLFprqrndti2/aAcbL1g60jCqgT+GfpMQOEYvFHC+Pm/0SDJpKJpqfWI+NqAdmLfcEX4mTC5NHTIzk0UVNAIEjjkVyqZma1bhxsSqMf7kkKyU7TDlLE2IE6mMIYNwlQ4PzW7bVuyPsjqlUfJQ0WkPEx+sIujP85xQAvQOpND8bKD8rUc/H9KDZkCIY48v7h4ulZB6LkAG4n+kudmRxu+fY7j9aUKpi8XYNsBViZugPsKnhraDfVpvSEBVTIyZ1lWrQLlRP8ZSHkoUr+pHZ/tMaCfz+G13zl4LFbbKFwX6PTQ8moblk/OQnp+I570rvn5/TxUX00eqt9uUmOlxK8FifjQELqmpvDFy+/A/+RLmOPjKF0LrfoPxv4uNEEiY5omL0t/oBqRuoa3TIZLeeqyyuC6BWR+mb3zUyKbXYbSrkR9aNlhNCNAzDCGVCYwWIvoLehQGDWWYXOMIXvzFj6+MAU3X8BH2bMYsOJ4yWqH3h0HM5SmBDSBCU5d6KkFaN5D9ZfyAmc9CUt4+OrTo+jp3omx1Lvo27c3smj1m5s0SeWm+clqi4czX8eIq56g8VSw0G2geOE7lC5exJYtnfBn/0BudBTqTh3tb24mkmxTAsaYpa4NrgTA2HyAz/doOHzLR/LDYzjgBigKgdLKCjo+eDaqIvi3hI2A8eP9c4xJKyqpqyOapBDhATv2DKdpAvoUie1f/wX9xTiKv+U3pP4OHJWS2/RhRctA1AjCPrxxXWCvwVDMujgYev/9UrPZX4srnC6qdG1Zvn/zVWp25s8iKnPewyaHFGKaC0WdqAZYoYgniUDKcxyptINqFUKuW8WjgEZ08oVs1o4MDyrqYToPIRFYbjU6tY8Jh27UVPhxu6Mn07YUMgqEjWZ0RTwOyPtkqP4uAUGM/XiadCejhVcikkfsh5TJ3YuLtb7e86KJ0R9S5N2RyK7VAljeexi7HFI+vGthIVUfvO9NDisJymqvlGwyqmQ5BxQraIK0HwS99cqraPzgHk1YXPMH3p7JD77/83JPK727OlWkSWnTPWNTdWnX8yZ6Hcd5UIr/Afycn+OvIJeiAAAAAElFTkSuQmCC" alt="Flag" loading="lazy">
+                <p class="cost-text">Até 125 Rodadas</p>
+                <p class="spins-text">Grátis</p>
+                <p class="logo-text">Bwin</p>
+                <a class="hero-link" target="_blank" href="https://www.bwin.pt/">Jogue agora</a>
+            </li>
+            <li class="hero-item">
+                <img class="hero-img-one" src="/creativecorea/assets/four-DVBJ1vom.png" alt="Site logo" loading="lazy">
+                <img class="flag-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOmSURBVHgBrVVdbBRVFP7unZlOO92lY9oIGJQhAaJoaPtoaOOSmKho0uozD5D43qIxJBDS3djG8gRNTPwPfeKxKTFqwoNsQKMJD4sosdiHjmjbRVuc7k5n/2bu9czALkspu+Xne5p7Jvd83/nOufcyNIA5kjBd3x8evJ5/5b2fliwDsDSKa4w5TMornLFprqrndti2/aAcbL1g60jCqgT+GfpMQOEYvFHC+Pm/0SDJpKJpqfWI+NqAdmLfcEX4mTC5NHTIzk0UVNAIEjjkVyqZma1bhxsSqMf7kkKyU7TDlLE2IE6mMIYNwlQ4PzW7bVuyPsjqlUfJQ0WkPEx+sIujP85xQAvQOpND8bKD8rUc/H9KDZkCIY48v7h4ulZB6LkAG4n+kudmRxu+fY7j9aUKpi8XYNsBViZugPsKnhraDfVpvSEBVTIyZ1lWrQLlRP8ZSHkoUr+pHZ/tMaCfz+G13zl4LFbbKFwX6PTQ8moblk/OQnp+I570rvn5/TxUX00eqt9uUmOlxK8FifjQELqmpvDFy+/A/+RLmOPjKF0LrfoPxv4uNEEiY5omL0t/oBqRuoa3TIZLeeqyyuC6BWR+mb3zUyKbXYbSrkR9aNlhNCNAzDCGVCYwWIvoLehQGDWWYXOMIXvzFj6+MAU3X8BH2bMYsOJ4yWqH3h0HM5SmBDSBCU5d6KkFaN5D9ZfyAmc9CUt4+OrTo+jp3omx1Lvo27c3smj1m5s0SeWm+clqi4czX8eIq56g8VSw0G2geOE7lC5exJYtnfBn/0BudBTqTh3tb24mkmxTAsaYpa4NrgTA2HyAz/doOHzLR/LDYzjgBigKgdLKCjo+eDaqIvi3hI2A8eP9c4xJKyqpqyOapBDhATv2DKdpAvoUie1f/wX9xTiKv+U3pP4OHJWS2/RhRctA1AjCPrxxXWCvwVDMujgYev/9UrPZX4srnC6qdG1Zvn/zVWp25s8iKnPewyaHFGKaC0WdqAZYoYgniUDKcxyptINqFUKuW8WjgEZ08oVs1o4MDyrqYToPIRFYbjU6tY8Jh27UVPhxu6Mn07YUMgqEjWZ0RTwOyPtkqP4uAUGM/XiadCejhVcikkfsh5TJ3YuLtb7e86KJ0R9S5N2RyK7VAljeexi7HFI+vGthIVUfvO9NDisJymqvlGwyqmQ5BxQraIK0HwS99cqraPzgHk1YXPMH3p7JD77/83JPK727OlWkSWnTPWNTdWnX8yZ6Hcd5UIr/Afycn+OvIJeiAAAAAElFTkSuQmCC" alt="Flag" loading="lazy">
+                <p class="cost-text">Dep. 10€ →</p>
+                <p class="spins-text">joga com 50€</p>
+                <p class="logo-text">Betclic</p>
+                <a class="hero-link" target="_blank" href="https://www.betclic.com/">Jogue agora</a>
+            </li>
+        </ul>
+    </div>
+</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
