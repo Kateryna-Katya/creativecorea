@@ -1,0 +1,95 @@
+.hero-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.hero-title{
+    font-family: "Afacad", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.08333;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+}
+.hero-span{
+    background: linear-gradient(166deg, #001f7b 0%, #278ac4 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.hero-list{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    }
+.hero-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    width: 335px;
+    height: 416px;
+    padding: 30px 64px;
+
+    border-radius: 12px;
+    border: 1px solid transparent;
+
+    background:
+        linear-gradient(180deg, #001f7b 0%, #2aa0ee 100%) padding-box,
+        transparent border-box;
+
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.hero-item:hover {
+    background:
+        linear-gradient(180deg, #001f7b 0%, #2aa0ee 100%) padding-box,
+        linear-gradient(166deg, #e8ba30 0%, #ff5f00 100%) border-box;
+
+    box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.4);
+}
+.cost-text{
+    font-family: "Afacad", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.33333;
+        color: #fff;
+}
+.spins-text{
+    font-family: "Afacad", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #e8ba30;
+}
+.logo-text{
+    font-family: "Afacad", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+}
+.hero-link{
+    display: flex;
+    font-family: "Afacad", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    border-radius: 10px;
+        padding: 12px 56px;
+        width: 209px;
+        height: 48px;
+        box-shadow: 0 0 40px 0 rgba(140, 204, 51, 0.15);
+            background: linear-gradient(166deg, #e8ba30 0%, #ff5f00 100%);
+            transition: all 0.3s ease-in-out;
+}
+.hero-link:hover{
+transform: scale(1.1);
+}
