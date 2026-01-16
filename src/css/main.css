@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
     }
 .hero-item {
     display: flex;
@@ -74,6 +75,7 @@
         color: #fff;
 }
 .hero-link{
+    margin-top: 16px;
     display: flex;
     font-family: "Afacad", sans-serif;
         font-weight: 700;
@@ -92,4 +94,25 @@
 }
 .hero-link:hover{
 transform: scale(1.1);
+}
+@media only screen and (min-width: 1440px) {
+    .hero-section{
+        background-image: url("/img/hero/desk.png");
+    }
+    .hero-title{
+        font-size: 52px;
+    }
+  
+    .hero-item{
+        flex-direction: row;
+        border-radius: 12px;
+            padding: 30px 64px;
+            width: 1157px;
+            height: 148px;
+            gap: 0;
+            justify-content: space-between;
+    }
+.hero-link{
+    margin-top: 0;
+}
 }
