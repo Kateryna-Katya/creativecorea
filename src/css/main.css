@@ -275,6 +275,7 @@ border-radius:0 0 12px 12px;
     width: 335px;
     max-height: 500px;
     margin-bottom: 16px;
+    margin-top: -1px;
 }
 .arrow-img {
     transition: transform 0.3s ease;
