@@ -116,3 +116,44 @@ transform: scale(1.1);
     margin-top: 0;
 }
 }
+/* about */
+.about-section{
+    background-image: url("/img/about/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 1160px;
+}
+.about-title{
+    font-family: "Afacad", sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 1.04545;
+        background: linear-gradient(166deg, #001f7b 0%, #278ac4 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.about-text{
+    text-align: justify;
+    margin-top: 28px;
+}
+.about-container{
+    padding-top: 79px;
+}
+@media only screen and (min-width: 1440px) {
+ .about-section{
+    background-image: url("/img/about/desk.png");
+    height: 800px;
+ }
+ .about-container{
+    padding: 221px 399px;
+ }
+.about-title{
+    font-size: 60px;
+        line-height: 1.06667;
+}
+.about-text{
+    margin-top: 32px;
+}
+}

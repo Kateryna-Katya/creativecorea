@@ -3,6 +3,10 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22222;
-    text-align: justify;
     color: #000;
+}
+@media only screen and (min-width: 1440px) {
+body{
+    font-size: 20px;
+}
 }
