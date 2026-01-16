@@ -283,3 +283,28 @@ border-radius:0 0 12px 12px;
 .faq-acc-el.open .arrow-img {
     transform: rotate(180deg);
 }
+@media only screen and (min-width: 1440px) {
+    .faq-section{
+        background-image: url("/img/faq/desk.png");
+            }
+  
+    .faq-title{
+        font-size: 52px;
+            line-height: 1.15385;
+    }
+    .faq-acc{
+        width: 965px;
+    }
+    .faq-acc-el-trigger{
+        width: 965px;
+    }
+        .faq-acc-el-descr-frame{
+            width: 965px;
+              }
+        .faq-acc-el.open .faq-acc-el-descr-frame {
+            width: 965px;
+        }
+                .faq-acc-el.open .faq-acc-el-trigger::after {
+                    width: 909px;
+                }
+}
